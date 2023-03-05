@@ -32,7 +32,7 @@
   }
 
   .main-container{
-    margin: 4rem;
+    margin: 2rem;
     min-height: 15rem;
   }
 
