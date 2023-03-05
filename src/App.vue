@@ -33,7 +33,7 @@
 
   .main-container{
     margin: 4rem;
-    min-height: 10rem;
+    min-height: 15rem;
   }
 
   h1{
