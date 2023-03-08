@@ -18,30 +18,22 @@
           <label for="tipo_pao" class="form-label">Pão</label>
           <select class="form-select" id="tipo_pao" v-model="tipo_pao">
             <option value="" selected>Selecione um Tipo</option>
-            <option value="1">One</option>
+            <option v-for="pao in paes" :key="pao.id" :value="pao.tipo">{{ pao.tipo }}</option>
           </select>
         </div>
         <div class="mb-3">
           <label for="tipo_carne" class="form-label">Carne</label>
           <select class="form-select" id="tipo_carne" v-model="tipo_carne">
             <option value="" selected>Selecione um Tipo</option>
-            <option value="1">One</option>
+            <option v-for="carne in carnes" :key="carne.id" :value="carne.tipo">{{ carne.tipo }}</option>
           </select>
         </div>
         <div class="mb-3">
           <label class="form-label">Adicionais</label>
           <div class="adicionais">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" />
-              <span>Salame</span>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" />
-              <span>Salame</span>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" />
-              <span>Salame</span>
+            <div v-for="opcional in opcionaisdata" :key="opcional.id" class="form-check">
+              <input class="form-check-input" type="checkbox" name="opcionais" v-model="opcionais" :value="opcional.tipo" />
+              <span>{{ opcional.tipo }}</span>
             </div>
           </div>
         </div>
@@ -60,6 +52,32 @@
 <script>
 export default {
   name: "Form",
+  data() {
+    return {
+      paes: null,
+      carnes: null,
+      opcionaisdata: null,
+      nome: null,
+      pao: null,
+      carne: null,
+      opcionais: [],
+      status: 'Solicitado',
+      msg: null,
+    };
+  },
+  methods: {
+    async getIngredientes(){
+      const req = await fetch('http://localhost:3000/ingredientes');
+      const data = await req.json();
+
+      this.paes = data.paes;
+      this.carnes = data.carnes;
+      this.opcionaisdata = data.opcionais;
+    }
+  },
+  mounted(){
+    this.getIngredientes();
+  },
 };
 </script>
 
@@ -77,22 +95,22 @@ label {
   flex-wrap: wrap;
 }
 
-.adicionais span{
-    font-weight: 700;
+.adicionais span {
+  font-weight: 700;
 }
 
-.btn_submit{
-    background-color: #222;
-    color: rgb(252, 188, 68);
-    border: 2px solid rgb(43, 43, 43);
-    border-radius: 10px;
-    padding: 0.5rem 0;
-    font-weight: 700;
-    transition: 0.5s;
+.btn_submit {
+  background-color: #222;
+  color: rgb(252, 188, 68);
+  border: 2px solid rgb(43, 43, 43);
+  border-radius: 10px;
+  padding: 0.5rem 0;
+  font-weight: 700;
+  transition: 0.5s;
 }
 
-.btn_submit:hover{
-    background-color: transparent;
-    color: black;
+.btn_submit:hover {
+  background-color: transparent;
+  color: black;
 }
 </style>
