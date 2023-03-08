@@ -3,7 +3,7 @@
     <div
       class="col-12 offset-0 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3"
     >
-      <form id="burger_form">
+      <form id="burger_form" @submit="createBurguer">
         <div class="mb-3">
           <label for="nome" class="form-label">Nome: </label>
           <input
@@ -61,7 +61,6 @@ export default {
       pao: null,
       carne: null,
       opcionais: [],
-      status: 'Solicitado',
       msg: null,
     };
   },
@@ -73,6 +72,28 @@ export default {
       this.paes = data.paes;
       this.carnes = data.carnes;
       this.opcionaisdata = data.opcionais;
+    },
+    async createBurguer(e){
+      e.preventDefault()
+      
+      const data = {
+        nome: this.nome,
+        carne: this.tipo_carne,
+        pao: this.tipo_pao,
+        opicionais: Array.from(this.opcionais),
+        status: "Solicitado",
+      }
+
+      const dataJson = JSON.stringify(data)
+
+      const req = await fetch('http://localhost:3000/burgers', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: dataJson,
+      });
+
+      const res = await req.json();
+      
     }
   },
   mounted(){
