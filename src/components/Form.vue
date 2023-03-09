@@ -3,11 +3,12 @@
     <div
       class="col-12 offset-0 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3"
     >
+      <Message :msg="msg" v-show="msg"/>
       <form id="burger_form" @submit="createBurguer">
         <div class="mb-3">
           <label for="nome" class="form-label">Nome: </label>
           <input
-            type="email"
+            type="text"
             class="form-control"
             id="nome"
             placeholder="Digite o seu nome"
@@ -50,6 +51,8 @@
 </template>
 
 <script>
+import Message from './Message.vue';
+
 export default {
   name: "Form",
   data() {
@@ -94,11 +97,22 @@ export default {
 
       const res = await req.json();
       
+      this.nome = "";
+      this.tipo_carne = "";
+      this.tipo_pao = "";
+      this.opcionais = [];
+
+      this.msg = 'Pedido realizado com sucesso!'
+
+      setTimeout(() => this.msg = "", 3000);
     }
   },
   mounted(){
     this.getIngredientes();
   },
+  components: {
+    Message,
+  }
 };
 </script>
 
