@@ -17,8 +17,20 @@
           <td>José</td>
           <td>Italiano Branco</td>
           <td>Veggie burger</td>
-          <td>Bacon</td>
-          <td>&nbsp;</td>
+          <td>
+            <ul class="list-group">
+              <li class="list-group-item p-1">Salame</li>
+              <li class="list-group-item p-1">Bacon</li>
+            </ul>
+          </td>
+          <td class="acoes">
+            <div>
+              <select class="form-select" name="status">
+                <option selected>Alterar Status do Pedido</option>
+              </select>
+              <button type="button" class="btn btn-danger">Cancelar</button>
+            </div>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -32,5 +44,15 @@ export default {
 </script>
 
 <style scoped>
+#burgers_table table tbody .acoes div {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  column-gap: 1rem;
+}
+
+#burgers_table table tbody .acoes {
+  width: 30%;
+}
 
 </style>
