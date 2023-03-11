@@ -19,13 +19,14 @@
           <td>{{ pedido.carne }}</td>
           <td>
             <ul class="list-group">
-              <li class="list-group-item p-1" v-for="(opcional, key) in pedido.opicionais" :key="key">{{ opcional }}</li>
+              <li class="list-group-item p-1" v-for="(opcional, key) in pedido.opcionais" :key="key">{{ opcional }}</li>
             </ul>
           </td>
           <td class="acoes">
             <div>
               <select class="form-select" name="status">
                 <option selected>Alterar Status do Pedido</option>
+                <option v-for="std in status" :key="std.id" :value="std.tipo" :v-model="std.id" :selected="pedido.status == std.tipo">{{ std.tipo }}</option>
               </select>
               <button type="button" class="btn btn-danger">Cancelar</button>
             </div>
@@ -54,11 +55,18 @@ export default {
 
       this.burgers = data;
       console.log(this.burgers);
-    }
+    },
+    async getStatus(){
+      const req = await fetch('http://localhost:3000/status');
+
+      const data = await req.json();
+
+      this.status = data;
+    },
   },
   mounted () {
     this.getPedidos();
-    
+    this.getStatus();
   },
 };
 </script>

@@ -83,7 +83,7 @@ export default {
         nome: this.nome,
         carne: this.tipo_carne,
         pao: this.tipo_pao,
-        opicionais: Array.from(this.opcionais),
+        opcionais: Array.from(this.opcionais),
         status: "Solicitado",
       }
 

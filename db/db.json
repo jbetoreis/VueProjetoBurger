@@ -105,7 +105,7 @@
       "nome": "Jose@asdasas",
       "carne": "Alcatra",
       "pao": "Parmesão e Orégano",
-      "opicionais": [
+      "opcionais": [
         "Cheddar",
         "Bacon",
         "Salame"
@@ -117,7 +117,7 @@
       "nome": "fsdaasd@asdsda",
       "carne": "Maminha",
       "pao": "Parmesão e Orégano",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -125,7 +125,7 @@
     },
     {
       "nome": null,
-      "opicionais": [],
+      "opcionais": [],
       "status": "Solicitado",
       "id": 7
     },
@@ -133,7 +133,7 @@
       "nome": "JosRoberto@sadsdaasd",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar",
         "Salame"
       ],
@@ -144,7 +144,7 @@
       "nome": "JosRoberto@sadsdaasd",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar",
         "Salame"
       ],
@@ -155,7 +155,7 @@
       "nome": "JosRoberto@sadsdaasd",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar",
         "Salame",
         "Tomate"
@@ -167,7 +167,7 @@
       "nome": "JosRoberto@sadsdaasd",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar",
         "Salame",
         "Tomate"
@@ -179,7 +179,7 @@
       "nome": "JosRoberto@sadsdaasd",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar",
         "Salame",
         "Tomate"
@@ -191,7 +191,7 @@
       "nome": "JosRoberto@sadsdaasd",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar",
         "Salame",
         "Tomate"
@@ -203,7 +203,7 @@
       "nome": "JosRoberto@sadsdaasd",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar",
         "Salame",
         "Tomate"
@@ -215,7 +215,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -225,7 +225,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -235,7 +235,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -245,7 +245,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -255,7 +255,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -265,7 +265,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -275,7 +275,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -285,7 +285,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -295,7 +295,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -305,7 +305,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -315,7 +315,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -325,7 +325,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -335,7 +335,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -345,7 +345,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -355,7 +355,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -365,7 +365,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -375,7 +375,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -385,7 +385,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -395,7 +395,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -405,7 +405,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -415,7 +415,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -425,7 +425,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -435,7 +435,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -445,7 +445,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -455,7 +455,7 @@
       "nome": "asdasdd@asdsad",
       "carne": "Maminha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Cheddar"
       ],
       "status": "Solicitado",
@@ -465,7 +465,7 @@
       "nome": "jasdo@asddas",
       "carne": "Picanha",
       "pao": "3 Queijos",
-      "opicionais": [
+      "opcionais": [
         "Bacon"
       ],
       "status": "Solicitado",
@@ -475,7 +475,7 @@
       "nome": "José Roberto",
       "carne": "Veggie burger",
       "pao": "Integral",
-      "opicionais": [
+      "opcionais": [
         "Cheddar",
         "Bacon"
       ],
@@ -486,7 +486,7 @@
       "nome": "José Roberto",
       "carne": "Picanha",
       "pao": "Italiano Branco",
-      "opicionais": [
+      "opcionais": [
         "Bacon",
         "Cheddar"
       ],
@@ -497,7 +497,7 @@
       "nome": "José Roberto",
       "carne": "Picanha",
       "pao": "Italiano Branco",
-      "opicionais": [
+      "opcionais": [
         "Bacon",
         "Cheddar"
       ],
@@ -508,7 +508,7 @@
       "nome": "asdfasdf",
       "carne": "Picanha",
       "pao": "Parmesão e Orégano",
-      "opicionais": [
+      "opcionais": [
         "Salame"
       ],
       "status": "Solicitado",
@@ -518,7 +518,7 @@
       "nome": "Ana",
       "carne": "Alcatra",
       "pao": "Italiano Branco",
-      "opicionais": [
+      "opcionais": [
         "Bacon"
       ],
       "status": "Solicitado",
@@ -528,7 +528,7 @@
       "nome": "Beto",
       "carne": "Alcatra",
       "pao": "Italiano Branco",
-      "opicionais": [
+      "opcionais": [
         "Bacon",
         "Cheddar"
       ],
