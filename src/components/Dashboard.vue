@@ -12,15 +12,14 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>1</td>
-          <td>José</td>
-          <td>Italiano Branco</td>
-          <td>Veggie burger</td>
+        <tr v-for="pedido in burgers" :key="pedido.id">
+          <td>{{ pedido.id }}</td>
+          <td>{{ pedido.nome }}</td>
+          <td>{{ pedido.pao }}</td>
+          <td>{{ pedido.carne }}</td>
           <td>
             <ul class="list-group">
-              <li class="list-group-item p-1">Salame</li>
-              <li class="list-group-item p-1">Bacon</li>
+              <li class="list-group-item p-1" v-for="(opcional, key) in pedido.opicionais" :key="key">{{ opcional }}</li>
             </ul>
           </td>
           <td class="acoes">
@@ -40,6 +39,27 @@
 <script>
 export default {
   name: "Dasboad",
+  data() {
+    return {
+      burgers: null,
+      burger_id: null,
+      status: [],
+    };
+  },
+  methods: {
+    async getPedidos(){
+      const req = await fetch('http://localhost:3000/burgers');
+
+      const data = await req.json();
+
+      this.burgers = data;
+      console.log(this.burgers);
+    }
+  },
+  mounted () {
+    this.getPedidos();
+    
+  },
 };
 </script>
 
@@ -54,5 +74,4 @@ export default {
 #burgers_table table tbody .acoes {
   width: 30%;
 }
-
 </style>
