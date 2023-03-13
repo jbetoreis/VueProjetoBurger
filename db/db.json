@@ -79,16 +79,14 @@
   ],
   "burgers": [
     {
-      "nome": "Maria",
-      "carne": "Picanha",
-      "pao": "Parmesão e Orégano",
+      "nome": "Ana",
+      "carne": "Alcatra",
+      "pao": "3 Queijos",
       "opcionais": [
-        "Bacon",
-        "Cheddar",
-        "Salame"
+        "Bacon"
       ],
-      "status": "Finalizado",
-      "id": 2
+      "status": "Em produção",
+      "id": 1
     }
   ]
 }

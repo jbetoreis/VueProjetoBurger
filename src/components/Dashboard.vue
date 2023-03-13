@@ -1,4 +1,5 @@
 <template>
+  <Message :msg="msg" v-show="msg"/>
   <div id="burgers_table">
     <table class="table table-striped table-hover">
       <thead>
@@ -19,16 +20,40 @@
           <td>{{ pedido.carne }}</td>
           <td>
             <ul class="list-group">
-              <li class="list-group-item p-1" v-for="(opcional, key) in pedido.opcionais" :key="key">{{ opcional }}</li>
+              <li
+                class="list-group-item p-1"
+                v-for="(opcional, key) in pedido.opcionais"
+                :key="key"
+              >
+                {{ opcional }}
+              </li>
             </ul>
           </td>
           <td class="acoes">
             <div>
-              <select class="form-select" name="status" @change="atualizarPedido($event, pedido.id)">
+              <select
+                class="form-select"
+                name="status"
+                @change="atualizarPedido($event, pedido.id)"
+              >
                 <option selected>Alterar Status do Pedido</option>
-                <option v-for="std in status" :key="std.id" :value="std.tipo" :v-model="std.id" :selected="pedido.status == std.tipo">{{ std.tipo }}</option>
+                <option
+                  v-for="std in status"
+                  :key="std.id"
+                  :value="std.tipo"
+                  :v-model="std.id"
+                  :selected="pedido.status == std.tipo"
+                >
+                  {{ std.tipo }}
+                </option>
               </select>
-              <button type="button" class="btn btn-danger" @click="cancelarPedido($event, pedido.id)">Cancelar</button>
+              <button
+                type="button"
+                class="btn btn-danger"
+                @click="cancelarPedido($event, pedido.id)"
+              >
+                Cancelar
+              </button>
             </div>
           </td>
         </tr>
@@ -38,6 +63,8 @@
 </template>
 
 <script>
+import Message from './Message.vue';
+
 export default {
   name: "Dasboad",
   data() {
@@ -45,47 +72,59 @@ export default {
       burgers: null,
       burger_id: null,
       status: [],
+      msg: null
     };
   },
+  components: {
+    Message,
+  },
   methods: {
-    async getPedidos(){
-      const req = await fetch('http://localhost:3000/burgers');
+    async getPedidos() {
+      const req = await fetch("http://localhost:3000/burgers");
 
       const data = await req.json();
 
       this.burgers = data;
     },
-    async getStatus(){
-      const req = await fetch('http://localhost:3000/status');
+    async getStatus() {
+      const req = await fetch("http://localhost:3000/status");
 
       const data = await req.json();
 
       this.status = data;
     },
-    async cancelarPedido(event, pedido_id){
+    async cancelarPedido(event, pedido_id) {
       const req = await fetch(`http://localhost:3000/burgers/${pedido_id}`, {
-        method: 'DELETE',
+        method: "DELETE",
       });
 
       const res = await req.json();
 
+      this.msg = 'Pedido Deletado com Sucesso!'
+
+      setTimeout(() => this.msg = "", 3000);
+
       this.getPedidos();
     },
-    async atualizarPedido(event, pedido_id){
+    async atualizarPedido(event, pedido_id) {
       let situacao = event.target.value;
       const dataJson = JSON.stringify({
         status: situacao,
-      })
+      });
       const req = await fetch(`http://localhost:3000/burgers/${pedido_id}`, {
-        method: 'PATCH',
-        headers: {'Content-Type': 'application/json'},
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
         body: dataJson,
       });
 
       const res = await req.json();
-    }
+
+      this.msg = `Pedido ${res.id} Atualizado com Sucesso!`
+
+      setTimeout(() => this.msg = "", 3000);
+    },
   },
-  mounted () {
+  mounted() {
     this.getPedidos();
     this.getStatus();
   },
