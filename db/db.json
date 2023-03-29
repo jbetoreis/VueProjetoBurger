@@ -79,13 +79,14 @@
   ],
   "burgers": [
     {
-      "nome": "Ana",
+      "nome": "José Roberto",
       "carne": "Alcatra",
-      "pao": "3 Queijos",
+      "pao": "Italiano Branco",
       "opcionais": [
-        "Bacon"
+        "Bacon",
+        "Cheddar"
       ],
-      "status": "Em produção",
+      "status": "Solicitado",
       "id": 1
     }
   ]
